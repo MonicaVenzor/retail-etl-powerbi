@@ -136,9 +136,13 @@ Top products belong to home decoration and gifting categories
 ##  ▶️ Reproducibility
 
 1️⃣ Download or clone this repository
+
 2️⃣ Place online_retail_II.xlsx inside /data/raw/
+
 3️⃣ Run /etl/01_etl_retail.ipynb to generate clean CSVs
+
 4️⃣ Open the .pbix file in Power BI Desktop
+
 5️⃣ Connect to /data/processed/ for your local paths
 
 ---
@@ -146,7 +150,9 @@ Top products belong to home decoration and gifting categories
 ## 🧩 Next Steps
 
 ✅ Add Year-over-Year comparison visual
+
 ✅ Automate ETL via Python script
+
 ✅ Expand with profitability metrics & forecasting
 
 ---
