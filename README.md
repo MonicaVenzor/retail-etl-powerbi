@@ -1,27 +1,26 @@
-# 🛒 Retail Sales Performance Dashboard (2009–2011) - PowerBi
+# 🛒 Retail Sales Performance Dashboard (2009–2011) — Power BI  
 [![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)]()
 [![Power BI](https://img.shields.io/badge/Power_BI-DAX-F2C811?logo=power-bi&logoColor=white)]()
-[![Pandas](https://img.shields.io/badge/pandas-Data_Cleaning-150458?logo=pandas)]()
+[![pandas](https://img.shields.io/badge/pandas-Data_Cleaning-150458?logo=pandas)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Includes KPIs and dynamic visualizations.
+Includes KPIs and dynamic business visualizations built with **Python (ETL)** and **Power BI (DAX + visuals)**.
 
-## 🎬 **Dashboard Demo**
+---
+
+## 🎬 Dashboard Demo
 <p align="center">
-  <img src="powerbi/Retail_Sales_Performance_Dashboard_(2009–2011)_GIF.gif" width="90%" alt="Superstore Dashboard demo animation">
+  <img src="powerbi/Retail_Sales_Performance_Dashboard_(2009–2011)_GIF.gif" width="90%" alt="Retail Dashboard demo animation">
 </p>
-
 
 ---
 
 ## 📖 Project Overview
 
-This project showcases the full **Data Analytics workflow**:
+This project showcases the complete **Data Analytics workflow**:  
 > **ETL (Python + pandas) → Clean CSVs → Power BI Dashboard (DAX + Visuals)**  
 
----
-
-- Source: [Online Retail II Dataset (UC Irvine)](https://archive.ics.uci.edu/dataset/502/online+retail+ii)
+Dataset: [Online Retail II (UC Irvine)](https://archive.ics.uci.edu/dataset/502/online+retail+ii) — transactions from 2009–2011.
 
 ---
 
@@ -29,9 +28,9 @@ This project showcases the full **Data Analytics workflow**:
 
 retail-etl-powerbi/
 ├─ data/
-│ ├─ raw
-│   └─ README.md
-│ ├─ processed
+│ ├─ raw/
+│   └─ README.md # Original dataset (not uploaded)
+│ ├─ processed/
 │   └─ processed.zip
 ├─ etl/
 │ └─ 01_etl_retail.ipynb
@@ -42,6 +41,8 @@ retail-etl-powerbi/
 ├─ requirements.txt
 ├─ .gitignore
 └─ README.md
+
+
 ---
 
 ## ⚙️ ETL Pipeline (Python)
@@ -59,17 +60,17 @@ retail-etl-powerbi/
 
 ## 📊 Power BI Dashboard
 
-**Dashboard Preview**
+### 🖼️ Dashboard Preview
 ![Dashboard](powerbi/Retail_Sales_Performance_Dashboard_(2009–2011).png)
 
 ### 📈 Main KPIs
-| KPI                | Description                             |
-|--------------------|------------------------------------------|
-| 💰 **Net Revenue** | Total sales minus returns                |
-| 🧾 **Orders**      | Distinct invoices without returns        |
-| 👥 **Active Customers** | Unique customers per period         |
-| 📦 **AOV**         | Average order value (Revenue / Orders)   |
-| 🔁 **Return Rate** | % of sales returned                      |
+| KPI | Description |
+|-----|--------------|
+| 💰 **Net Revenue** | Total sales minus returns |
+| 🧾 **Orders** | Distinct invoices without returns |
+| 👥 **Active Customers** | Unique customers per period |
+| 📦 **AOV** | Average order value (Revenue ÷ Orders) |
+| 🔁 **Return Rate** | % of sales returned |
 
 ---
 
@@ -99,26 +100,25 @@ ADDCOLUMNS (
     "YearMonth", FORMAT ( [Date], "YYYY-MM" ),
     "Quarter", "Q" & FORMAT ( [Date], "Q" )
 )
-
 ```
+
 ---
 
 ## 💡 Key Insights
 
-$19M in total revenue between 2009–2011
-United Kingdom drives the largest share of sales
-Return rate ~7%, stable across the three years
-Top-selling products are primarily home decoration and gifting items
+$19M total revenue between 2009–2011
+United Kingdom leads all sales regions
+~7% return rate, consistent across years
+Top products belong to home decoration and gifting categories
 
 ---
 
 ## 🎨 Dashboard Features
 
-✨ Modern layout with clean light theme
-📊 Dynamic KPIs and visual interactions
-📍 Geographic map visualization (Bing)
-🧮 Reusable DAX measures and star schema model
-🧑‍💻 Author
+✨ Clean modern layout (light theme)
+📊 Dynamic KPI cards & interactions
+📍 Geographic revenue map (Bing Maps)
+🧮 Reusable DAX measures & star schema model
 
 ---
 
@@ -135,11 +135,11 @@ Top-selling products are primarily home decoration and gifting items
 
 ##  ▶️ Reproducibility
 
-1️⃣ Download or clone the repository
+1️⃣ Download or clone this repository
 2️⃣ Place online_retail_II.xlsx inside /data/raw/
-3️⃣ Run the ETL notebook → /etl/01_etl_retail.ipynb
-4️⃣ Open Retail_Sales_Performance_Dashboard_(2009–2011).pbix in Power BI
-5️⃣ Connect to processed CSVs in /data/processed/
+3️⃣ Run /etl/01_etl_retail.ipynb to generate clean CSVs
+4️⃣ Open the .pbix file in Power BI Desktop
+5️⃣ Connect to /data/processed/ for your local paths
 
 ---
 
@@ -147,7 +147,7 @@ Top-selling products are primarily home decoration and gifting items
 
 ✅ Add Year-over-Year comparison visual
 ✅ Automate ETL via Python script
-✅ Expand with profitability metrics and forecast modeling
+✅ Expand with profitability metrics & forecasting
 
 ---
 
