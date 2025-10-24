@@ -40,6 +40,7 @@ retail-etl-powerbi/
 │ └─ Retail_Sales_Performance_Dashboard_(2009–2011)_GIF.gif
 ├─ requirements.txt
 ├─ .gitignore
+├─ LICENSE
 └─ README.md
 
 
@@ -158,7 +159,9 @@ Top products belong to home decoration and gifting categories
 ---
 
 Mónica Venzor
+
 📍 Data Analyst Jr | SQL | Excel | Power BI | Python | Data Visualization | Machine Learning Enthusiast
+
 🔗[LinkedIn](https://www.linkedin.com/in/monicavenzor/) |  — [GitHub](https://github.com/MonicaVenzor)  
 ---
 
