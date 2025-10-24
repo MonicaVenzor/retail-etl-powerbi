@@ -1,0 +1,40 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.ipynb_checkpoints/
+.env
+.venv/
+env/
+venv/
+
+# --- Data ---
+data/raw/
+data/interim/
+*.zip
+*.xlsx
+*.xls
+*.parquet
+
+# --- Power BI ---
+*.pbix.RESTORE
+*.pbip
+*.pbit.tmp
+*.pbit.bak
+
+# --- System / Editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# --- Output / Reports ---
+*.pdf
+*.png
+*.gif
+*.csv
+!data/processed/*.csv
+!powerbi/*.png
+!powerbi/*.gif
